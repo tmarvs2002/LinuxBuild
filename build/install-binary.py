@@ -5,7 +5,7 @@ import time
 
 PKG_CONFIG_LIST = '/mnt/linux_dist/build/pkg-config-list.json'
 SOURCES = '/mnt/linux_dist/root/sources'
-INSTALLER = '/mnt/linux_dist/build/install-binary.sh'
+INSTALLER = '/mnt/linux_dist/build/installer.sh'
 BUILD_DIR = f'{SOURCES}/tmp'
 
 
