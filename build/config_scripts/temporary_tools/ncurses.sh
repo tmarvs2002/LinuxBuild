@@ -14,9 +14,9 @@ popd
     --build=$(./config.guess) \
     --mandir=/usr/share/man \
     --with-manpage-format=normal \
-    --with-shared
+    --with-shared \
     --without-debug \
-    --without-ada
+    --without-ada \
     --without-normal \
     --enable-widec
 

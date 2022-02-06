@@ -4,4 +4,4 @@
 --host=$LFS_TGT \
 --build=$(build-aux/config.guess)
 
-make && DESTDIR=$LFS install
+make && make DESTDIR=$LFS install

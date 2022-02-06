@@ -5,6 +5,5 @@
             --host=$LFS_TGT                 \
             --without-bash-malloc
 
-make && DESTDIR=$LFS install
-
+make && make DESTDIR=$LFS install
 ln -sv bash $LFS/bin/sh
