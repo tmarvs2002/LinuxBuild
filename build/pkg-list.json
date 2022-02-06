@@ -1,0 +1,601 @@
+{
+    "packages": [
+        {
+            "name": "acl",
+            "version": "2.3.1",
+            "download": "https://download.savannah.gnu.org/releases/acl/acl-2.3.1.tar.xz",
+            "md5": "95ce715fe09acca7c12d3306d0f076b2",
+            "source": "/mnt/linux_dist/root/sources/acl-2.3.1.tar.xz"
+        },
+        {
+            "name": "attr",
+            "version": "2.5.1",
+            "download": "https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz",
+            "md5": "ac1c5a7a084f0f83b8cace34211f64d8",
+            "source": "/mnt/linux_dist/root/sources/attr-2.5.1.tar.gz"
+        },
+        {
+            "name": "autoconf",
+            "version": "2.71",
+            "download": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz",
+            "md5": "12cfa1687ffa2606337efe1a64416106",
+            "source": "/mnt/linux_dist/root/sources/autoconf-2.71.tar.xz"
+        },
+        {
+            "name": "automake",
+            "version": "1.16.4",
+            "download": "https://ftp.gnu.org/gnu/automake/automake-1.16.4.tar.xz",
+            "md5": "86e8e682bd74e6390a016c4d9c11267c",
+            "source": "/mnt/linux_dist/root/sources/automake-1.16.4.tar.xz"
+        },
+        {
+            "name": "bash",
+            "version": "5.1.8",
+            "download": "https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz",
+            "md5": "23eee6195b47318b9fd878e590ccb38c",
+            "source": "/mnt/linux_dist/root/sources/bash-5.1.8.tar.gz"
+        },
+        {
+            "name": "bc",
+            "version": "5.0.0",
+            "download": "https://github.com/gavinhoward/bc/releases/download/5.0.0/bc-5.0.0.tar.xz",
+            "md5": "8345bb81c576ddfc8c27e0842370603c",
+            "source": "/mnt/linux_dist/root/sources/bc-5.0.0.tar.xz"
+        },
+        {
+            "name": "binutils",
+            "version": "2.37",
+            "download": "https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz",
+            "md5": "e78d9ff2976b745a348f4c1f27c77cb1",
+            "source": "/mnt/linux_dist/root/sources/binutils-2.37.tar.xz"
+        },
+        {
+            "name": "bison",
+            "version": "3.7.6",
+            "download": "https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.xz",
+            "md5": "d61aa92e3562cb7292b004ce96173cf7",
+            "source": "/mnt/linux_dist/root/sources/bison-3.7.6.tar.xz"
+        },
+        {
+            "name": "bzip2",
+            "version": "1.0.8",
+            "download": "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+            "md5": "67e051268d0c475ea773822f7500d0e5",
+            "source": "/mnt/linux_dist/root/sources/bzip2-1.0.8.tar.gz"
+        },
+        {
+            "name": "check",
+            "version": "0.15.2",
+            "download": "https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz",
+            "md5": "50fcafcecde5a380415b12e9c574e0b2",
+            "source": "/mnt/linux_dist/root/sources/check-0.15.2.tar.gz"
+        },
+        {
+            "name": "coreutils",
+            "version": "8.32",
+            "download": "https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz",
+            "md5": "022042695b7d5bcf1a93559a9735e668",
+            "source": "/mnt/linux_dist/root/sources/coreutils-8.32.tar.xz"
+        },
+        {
+            "name": "dejagnu",
+            "version": "1.6.3",
+            "download": "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
+            "md5": "68c5208c58236eba447d7d6d1326b821",
+            "source": "/mnt/linux_dist/root/sources/dejagnu-1.6.3.tar.gz"
+        },
+        {
+            "name": "diffutils",
+            "version": "3.8",
+            "download": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz",
+            "md5": "6a6b0fdc72acfe3f2829aab477876fbc",
+            "source": "/mnt/linux_dist/root/sources/diffutils-3.8.tar.xz"
+        },
+        {
+            "name": "e2fsprogs",
+            "version": "1.46.4",
+            "download": "https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.4/e2fsprogs-1.46.4.tar.gz",
+            "md5": "128f5b0f0746b28d1e3ca7e263c57094",
+            "source": "/mnt/linux_dist/root/sources/e2fsprogs-1.46.4.tar.gz"
+        },
+        {
+            "name": "elfutils",
+            "version": "0.185",
+            "download": "https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2",
+            "md5": "2b6e94c2eebc1f2194173e31bca9396e",
+            "source": "/mnt/linux_dist/root/sources/elfutils-0.185.tar.bz2"
+        },
+        {
+            "name": "eudev",
+            "version": "3.2.10",
+            "download": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz",
+            "md5": "60b135a189523f333cea5f71a3345c8d",
+            "source": "/mnt/linux_dist/root/sources/eudev-3.2.10.tar.gz"
+        },
+        {
+            "name": "expat",
+            "version": "2.4.1",
+            "download": "https://prdownloads.sourceforge.net/expat/expat-2.4.1.tar.xz",
+            "md5": "a4fb91a9441bcaec576d4c4a56fa3aa6",
+            "source": "/mnt/linux_dist/root/sources/expat-2.4.1.tar.xz"
+        },
+        {
+            "name": "expect",
+            "version": "5.45.4",
+            "download": "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz",
+            "md5": "00fce8de158422f5ccd2666512329bd2",
+            "source": "/mnt/linux_dist/root/sources/expect5.45.4.tar.gz"
+        },
+        {
+            "name": "file",
+            "version": "5.40",
+            "download": "https://astron.com/pub/file/file-5.40.tar.gz",
+            "md5": "72540ea1cc8c6e1dee35d6100ec66589",
+            "source": "/mnt/linux_dist/root/sources/file-5.40.tar.gz"
+        },
+        {
+            "name": "findutils",
+            "version": "4.8.0",
+            "download": "https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz",
+            "md5": "eeefe2e6380931a77dfa6d9350b43186",
+            "source": "/mnt/linux_dist/root/sources/findutils-4.8.0.tar.xz"
+        },
+        {
+            "name": "flex",
+            "version": "2.6.4",
+            "download": "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz",
+            "md5": "2882e3179748cc9f9c23ec593d6adc8d",
+            "source": "/mnt/linux_dist/root/sources/flex-2.6.4.tar.gz"
+        },
+        {
+            "name": "gawk",
+            "version": "5.1.0",
+            "download": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz",
+            "md5": "8470c34eeecc41c1aa0c5d89e630df50",
+            "source": "/mnt/linux_dist/root/sources/gawk-5.1.0.tar.xz"
+        },
+        {
+            "name": "gcc",
+            "version": "11.2.0",
+            "download": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
+            "md5": "31c86f2ced76acac66992eeedce2fce2",
+            "source": "/mnt/linux_dist/root/sources/gcc-11.2.0.tar.xz"
+        },
+        {
+            "name": "gdbm",
+            "version": "1.20",
+            "download": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.20.tar.gz",
+            "md5": "006c19b8b60828fd6916a16f3496bd3c",
+            "source": "/mnt/linux_dist/root/sources/gdbm-1.20.tar.gz"
+        },
+        {
+            "name": "gettext",
+            "version": "0.21",
+            "download": "https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz",
+            "md5": "40996bbaf7d1356d3c22e33a8b255b31",
+            "source": "/mnt/linux_dist/root/sources/gettext-0.21.tar.xz"
+        },
+        {
+            "name": "glibc",
+            "version": "2.34",
+            "download": "https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.xz",
+            "md5": "31998b53fb39cb946e96abc310af1c89",
+            "source": "/mnt/linux_dist/root/sources/glibc-2.34.tar.xz"
+        },
+        {
+            "name": "gmp",
+            "version": "6.2.1",
+            "download": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+            "md5": "0b82665c4a92fd2ade7440c13fcaa42b",
+            "source": "/mnt/linux_dist/root/sources/gmp-6.2.1.tar.xz"
+        },
+        {
+            "name": "gperf",
+            "version": "3.1",
+            "download": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
+            "md5": "9e251c0a618ad0824b51117d5d9db87e",
+            "source": "/mnt/linux_dist/root/sources/gperf-3.1.tar.gz"
+        },
+        {
+            "name": "grep",
+            "version": "3.7",
+            "download": "https://ftp.gnu.org/gnu/grep/grep-3.7.tar.xz",
+            "md5": "7c9cca97fa18670a21e72638c3e1dabf",
+            "source": "/mnt/linux_dist/root/sources/grep-3.7.tar.xz"
+        },
+        {
+            "name": "groff",
+            "version": "1.22.4",
+            "download": "https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz",
+            "md5": "08fb04335e2f5e73f23ea4c3adbf0c5f",
+            "source": "/mnt/linux_dist/root/sources/groff-1.22.4.tar.gz"
+        },
+        {
+            "name": "grub",
+            "version": "2.06",
+            "download": "https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz",
+            "md5": "cf0fd928b1e5479c8108ee52cb114363",
+            "source": "/mnt/linux_dist/root/sources/grub-2.06.tar.xz"
+        },
+        {
+            "name": "gzip",
+            "version": "1.10",
+            "download": "https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz",
+            "md5": "691b1221694c3394f1c537df4eee39d3",
+            "source": "/mnt/linux_dist/root/sources/gzip-1.10.tar.xz"
+        },
+        {
+            "name": "iana-etc",
+            "version": "20210611",
+            "download": "https://github.com/Mic92/iana-etc/releases/download/20210611/iana-etc-20210611.tar.gz",
+            "md5": "f2854be57fe281e3ffc7364984467d2f",
+            "source": "/mnt/linux_dist/root/sources/iana-etc-20210611.tar.gz"
+        },
+        {
+            "name": "inetutils",
+            "version": "2.1",
+            "download": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.1.tar.xz",
+            "md5": "4e7676d1980e57c7df665e5c5c3c1047",
+            "source": "/mnt/linux_dist/root/sources/inetutils-2.1.tar.xz"
+        },
+        {
+            "name": "intltool",
+            "version": "0.51.0",
+            "download": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+            "md5": "12e517cac2b57a0121cda351570f1e63",
+            "source": "/mnt/linux_dist/root/sources/intltool-0.51.0.tar.gz"
+        },
+        {
+            "name": "iproute2",
+            "version": "5.13.0",
+            "download": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.13.0.tar.xz",
+            "md5": "15fc3786303a173a14e180afe4cd2ecd",
+            "source": "/mnt/linux_dist/root/sources/iproute2-5.13.0.tar.xz"
+        },
+        {
+            "name": "kbd",
+            "version": "2.4.0",
+            "download": "https://www.kernel.org/pub/linux/utils/kbd/kbd-2.4.0.tar.xz",
+            "md5": "3cac5be0096fcf7b32dcbd3c53831380",
+            "source": "/mnt/linux_dist/root/sources/kbd-2.4.0.tar.xz"
+        },
+        {
+            "name": "kmod",
+            "version": "29",
+            "download": "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-29.tar.xz",
+            "md5": "e81e63acd80697d001c8d85c1acb38a0",
+            "source": "/mnt/linux_dist/root/sources/kmod-29.tar.xz"
+        },
+        {
+            "name": "less",
+            "version": "590",
+            "download": "https://www.greenwoodsoftware.com/less/less-590.tar.gz",
+            "md5": "f029087448357812fba450091a1172ab",
+            "source": "/mnt/linux_dist/root/sources/less-590.tar.gz"
+        },
+        {
+            "name": "lfs-bootscripts",
+            "version": "20210608",
+            "download": "https://www.linuxfromscratch.org/lfs/downloads/11.0/lfs-bootscripts-20210608.tar.xz",
+            "md5": "6efd60044ad31a603a2c31c68919a988",
+            "source": "/mnt/linux_dist/root/sources/lfs-bootscripts-20210608.tar.xz"
+        },
+        {
+            "name": "libcap",
+            "version": "2.53",
+            "download": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.53.tar.xz",
+            "md5": "094994d4554c6689cf98ae4f717b8e19",
+            "source": "/mnt/linux_dist/root/sources/libcap-2.53.tar.xz"
+        },
+        {
+            "name": "libffi",
+            "version": "3.4.2",
+            "download": "https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz",
+            "md5": "294b921e6cf9ab0fbaea4b639f8fdbe8",
+            "source": "/mnt/linux_dist/root/sources/libffi-3.4.2.tar.gz"
+        },
+        {
+            "name": "libpipeline",
+            "version": "1.5.3",
+            "download": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz",
+            "md5": "dad443d0911cf9f0f1bd90a334bc9004",
+            "source": "/mnt/linux_dist/root/sources/libpipeline-1.5.3.tar.gz"
+        },
+        {
+            "name": "libtool",
+            "version": "2.4.6",
+            "download": "https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz",
+            "md5": "1bfb9b923f2c1339b4d2ce1807064aa5",
+            "source": "/mnt/linux_dist/root/sources/libtool-2.4.6.tar.xz"
+        },
+        {
+            "name": "linux",
+            "version": "5.13.12",
+            "download": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz",
+            "md5": "6e1728b2021ca19cc9273f080e6c44c7",
+            "source": "/mnt/linux_dist/root/sources/linux-5.13.12.tar.xz"
+        },
+        {
+            "name": "m4",
+            "version": "1.4.19",
+            "download": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
+            "md5": "0d90823e1426f1da2fd872df0311298d",
+            "source": "/mnt/linux_dist/root/sources/m4-1.4.19.tar.xz"
+        },
+        {
+            "name": "make",
+            "version": "4.3",
+            "download": "https://ftp.gnu.org/gnu/make/make-4.3.tar.gz",
+            "md5": "fc7a67ea86ace13195b0bce683fd4469",
+            "source": "/mnt/linux_dist/root/sources/make-4.3.tar.gz"
+        },
+        {
+            "name": "man-db",
+            "version": "2.9.4",
+            "download": "https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz",
+            "md5": "6e233a555f7b9ae91ce7cd0faa322bce",
+            "source": "/mnt/linux_dist/root/sources/man-db-2.9.4.tar.xz"
+        },
+        {
+            "name": "man-pages",
+            "version": "5.13",
+            "download": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-5.13.tar.xz",
+            "md5": "3ac24e8c6fae26b801cb87ceb63c0a30",
+            "source": "/mnt/linux_dist/root/sources/man-pages-5.13.tar.xz"
+        },
+        {
+            "name": "meson",
+            "version": "0.59.1",
+            "download": "https://github.com/mesonbuild/meson/releases/download/0.59.1/meson-0.59.1.tar.gz",
+            "md5": "9c8135ecde820094be2f42f457fb6535",
+            "source": "/mnt/linux_dist/root/sources/meson-0.59.1.tar.gz"
+        },
+        {
+            "name": "mpc",
+            "version": "1.2.1",
+            "download": "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz",
+            "md5": "9f16c976c25bb0f76b50be749cd7a3a8",
+            "source": "/mnt/linux_dist/root/sources/mpc-1.2.1.tar.gz"
+        },
+        {
+            "name": "mpfr",
+            "version": "4.1.0",
+            "download": "https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz",
+            "md5": "bdd3d5efba9c17da8d83a35ec552baef",
+            "source": "/mnt/linux_dist/root/sources/mpfr-4.1.0.tar.xz"
+        },
+        {
+            "name": "ncurses",
+            "version": "6.2",
+            "download": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz",
+            "md5": "e812da327b1c2214ac1aed440ea3ae8d",
+            "source": "/mnt/linux_dist/root/sources/ncurses-6.2.tar.gz"
+        },
+        {
+            "name": "ninja",
+            "version": "1.10.2",
+            "download": "https://github.com/ninja-build/ninja/archive/v1.10.2/ninja-1.10.2.tar.gz",
+            "md5": "639f75bc2e3b19ab893eaf2c810d4eb4",
+            "source": "/mnt/linux_dist/root/sources/ninja-1.10.2.tar.gz"
+        },
+        {
+            "name": "openssl",
+            "version": "1.1.1l",
+            "download": "https://www.openssl.org/source/openssl-1.1.1l.tar.gz",
+            "md5": "ac0d4387f3ba0ad741b0580dd45f6ff3",
+            "source": "/mnt/linux_dist/root/sources/openssl-1.1.1l.tar.gz"
+        },
+        {
+            "name": "patch",
+            "version": "2.7.6",
+            "download": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz",
+            "md5": "78ad9937e4caadcba1526ef1853730d5",
+            "source": "/mnt/linux_dist/root/sources/patch-2.7.6.tar.xz"
+        },
+        {
+            "name": "perl",
+            "version": "5.34.0",
+            "download": "https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz",
+            "md5": "df7ecb0653440b26dc951ad9dbfab517",
+            "source": "/mnt/linux_dist/root/sources/perl-5.34.0.tar.xz"
+        },
+        {
+            "name": "pkg-config",
+            "version": "0.29.2",
+            "download": "https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz",
+            "md5": "f6e931e319531b736fadc017f470e68a",
+            "source": "/mnt/linux_dist/root/sources/pkg-config-0.29.2.tar.gz"
+        },
+        {
+            "name": "procps",
+            "version": "3.3.17",
+            "download": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.17.tar.xz",
+            "md5": "d60613e88c2f442ebd462b5a75313d56",
+            "source": "/mnt/linux_dist/root/sources/procps-ng-3.3.17.tar.xz"
+        },
+        {
+            "name": "psmisc",
+            "version": "23.4",
+            "download": "https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.4.tar.xz",
+            "md5": "8114cd4489b95308efe2509c3a406bbf",
+            "source": "/mnt/linux_dist/root/sources/psmisc-23.4.tar.xz"
+        },
+        {
+            "name": "python",
+            "version": "3.9.6",
+            "download": "https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz",
+            "md5": "ecc29a7688f86e550d29dba2ee66cf80",
+            "source": "/mnt/linux_dist/root/sources/Python-3.9.6.tar.xz"
+        },
+        {
+            "name": "python documentation",
+            "version": "3.9.6",
+            "download": "https://www.python.org/ftp/python/doc/3.9.6/python-3.9.6-docs-html.tar.bz2",
+            "md5": "0dae29e4c38af1b6b1a86b35c9e48923",
+            "source": "/mnt/linux_dist/root/sources/python-3.9.6-docs-html.tar.bz2"
+        },
+        {
+            "name": "readline",
+            "version": "8.1",
+            "download": "https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz",
+            "md5": "e9557dd5b1409f5d7b37ef717c64518e",
+            "source": "/mnt/linux_dist/root/sources/readline-8.1.tar.gz"
+        },
+        {
+            "name": "sed",
+            "version": "4.8",
+            "download": "https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz",
+            "md5": "6d906edfdb3202304059233f51f9a71d",
+            "source": "/mnt/linux_dist/root/sources/sed-4.8.tar.xz"
+        },
+        {
+            "name": "shadow",
+            "version": "4.9",
+            "download": "https://github.com/shadow-maint/shadow/releases/download/v4.9/shadow-4.9.tar.xz",
+            "md5": "126924090caf72f3de7e9261fd4e10ac",
+            "source": "/mnt/linux_dist/root/sources/shadow-4.9.tar.xz"
+        },
+        {
+            "name": "sysklogd",
+            "version": "1.5.1",
+            "download": "https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz",
+            "md5": "c70599ab0d037fde724f7210c2c8d7f8",
+            "source": "/mnt/linux_dist/root/sources/sysklogd-1.5.1.tar.gz"
+        },
+        {
+            "name": "sysvinit",
+            "version": "2.99",
+            "download": "https://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.99.tar.xz",
+            "md5": "6abc0ea61b8dd4a41b4e931a43b1bb90",
+            "source": "/mnt/linux_dist/root/sources/sysvinit-2.99.tar.xz"
+        },
+        {
+            "name": "tar",
+            "version": "1.34",
+            "download": "https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz",
+            "md5": "9a08d29a9ac4727130b5708347c0f5cf",
+            "source": "/mnt/linux_dist/root/sources/tar-1.34.tar.xz"
+        },
+        {
+            "name": "tcl",
+            "version": "8.6.11",
+            "download": "https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz",
+            "md5": "8a4c004f48984a03a7747e9ba06e4da4",
+            "source": "/mnt/linux_dist/root/sources/tcl8.6.11-src.tar.gz"
+        },
+        {
+            "name": "tcl documentation",
+            "version": "8.6.11",
+            "download": "https://downloads.sourceforge.net/tcl/tcl8.6.11-html.tar.gz",
+            "md5": "e358a9140c3a171e42f18c8a7f6a36ea",
+            "source": "/mnt/linux_dist/root/sources/tcl8.6.11-html.tar.gz"
+        },
+        {
+            "name": "texinfo",
+            "version": "6.8",
+            "download": "https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz",
+            "md5": "a91b404e30561a5df803e6eb3a53be71",
+            "source": "/mnt/linux_dist/root/sources/texinfo-6.8.tar.xz"
+        },
+        {
+            "name": "time zone data",
+            "version": "2021a",
+            "download": "https://www.iana.org/time-zones/repository/releases/tzdata2021a.tar.gz",
+            "md5": "20eae7d1da671c6eac56339c8df85bbd",
+            "source": "/mnt/linux_dist/root/sources/tzdata2021a.tar.gz"
+        },
+        {
+            "name": "udev-lfs tarball",
+            "version": "udev-lfs-20171102",
+            "download": "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20171102.tar.xz",
+            "md5": "27cd82f9a61422e186b9d6759ddf1634",
+            "source": "/mnt/linux_dist/root/sources/udev-lfs-20171102.tar.xz"
+        },
+        {
+            "name": "util-linux",
+            "version": "2.37.2",
+            "download": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz",
+            "md5": "d659bf7cd417d93dc609872f6334b019",
+            "source": "/mnt/linux_dist/root/sources/util-linux-2.37.2.tar.xz"
+        },
+        {
+            "name": "vim",
+            "version": "8.2.3337",
+            "download": "https://anduin.linuxfromscratch.org/LFS/vim-8.2.3337.tar.gz",
+            "md5": "e0325a4988b1b99b9c2e46fa853c1980",
+            "source": "/mnt/linux_dist/root/sources/vim-8.2.3337.tar.gz"
+        },
+        {
+            "name": "xml::parser",
+            "version": "2.46",
+            "download": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
+            "md5": "80bb18a8e6240fcf7ec2f7b57601c170",
+            "source": "/mnt/linux_dist/root/sources/XML-Parser-2.46.tar.gz"
+        },
+        {
+            "name": "xz utils",
+            "version": "5.2.5",
+            "download": "https://tukaani.org/xz/xz-5.2.5.tar.xz",
+            "md5": "aa1621ec7013a19abab52a8aff04fe5b",
+            "source": "/mnt/linux_dist/root/sources/xz-5.2.5.tar.xz"
+        },
+        {
+            "name": "zlib",
+            "version": "1.2.11",
+            "download": "https://zlib.net/zlib-1.2.11.tar.xz",
+            "md5": "85adef240c5f370b308da8c938951a68",
+            "source": "/mnt/linux_dist/root/sources/zlib-1.2.11.tar.xz"
+        },
+        {
+            "name": "zstd",
+            "version": "1.5.0",
+            "download": "https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz",
+            "md5": "a6eb7fb1f2c21fa80030a47993853e92",
+            "source": "/mnt/linux_dist/root/sources/zstd-1.5.0.tar.gz"
+        }
+    ],
+    "patches": [
+        {
+            "name": "binutils-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/binutils-2.37-upstream_fix-1.patch",
+            "md5": "3518fa864fe8d7ef65be4960f380b03b",
+            "source": "/mnt/linux_dist/root/sources/binutils-2.37-upstream_fix-1.patch"
+        },
+        {
+            "name": "bzip2-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/bzip2-1.0.8-install_docs-1.patch",
+            "md5": "6a5ac7e89b791aae556de0f745916f7f",
+            "source": "/mnt/linux_dist/root/sources/bzip2-1.0.8-install_docs-1.patch"
+        },
+        {
+            "name": "coreutils-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/coreutils-8.32-i18n-1.patch",
+            "md5": "cd8ebed2a67fff2e231026df91af6776",
+            "source": "/mnt/linux_dist/root/sources/coreutils-8.32-i18n-1.patch"
+        },
+        {
+            "name": "glibc-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/glibc-2.34-fhs-1.patch",
+            "md5": "9a5997c3452909b1769918c759eff8a2",
+            "source": "/mnt/linux_dist/root/sources/glibc-2.34-fhs-1.patch"
+        },
+        {
+            "name": "kbd-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/kbd-2.4.0-backspace-1.patch",
+            "md5": "f75cca16a38da6caa7d52151f7136895",
+            "source": "/mnt/linux_dist/root/sources/kbd-2.4.0-backspace-1.patch"
+        },
+        {
+            "name": "perl-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/perl-5.34.0-upstream_fixes-1.patch",
+            "md5": "fb42558b59ed95ee00eb9f1c1c9b8056",
+            "source": "/mnt/linux_dist/root/sources/perl-5.34.0-upstream_fixes-1.patch"
+        },
+        {
+            "name": "sysvinit-patch",
+            "download": "https://www.linuxfromscratch.org/patches/lfs/11.0/sysvinit-2.99-consolidated-1.patch",
+            "md5": "4900322141d493e74020c9cf437b2cdc",
+            "source": "/mnt/linux_dist/root/sources/sysvinit-2.99-consolidated-1.patch"
+        }
+    ]
+}
