@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+
 echo "LFS: ${LFS:?}"
 echo "BUILD: ${BUILD:?}"
 
@@ -34,4 +35,9 @@ function configure_package_input {
 # configure_package_input "cross_toolchain"
 # configure_package_input "temporary_tools"
 
-# sudo -E bash -e "$BUILD"/chroot.sh
+# sudo -E bash -e "$BUILD"/chroot-setup.sh
+
+# umount "$LFS"/dev{/pts,}
+# umount "$LFS"/{sys,proc,run}
+# cd $LFS
+# tar -cJpf "$BUILD"/lfs-temp-tools.tar.xz .

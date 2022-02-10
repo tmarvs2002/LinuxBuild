@@ -67,6 +67,12 @@
             "path": "/mnt/linux_dist/root/sources/coreutils-8.32.tar.xz"
         },
         {
+            "name": "dbus-1.12.20",
+            "download": "https://dbus.freedesktop.org/releases/dbus/dbus-1.12.20.tar.gz",
+            "md5": "dfe8a71f412e0b53be26ed4fbfdc91c4",
+            "path": "/mnt/linux_dist/root/sources/dbus-1.12.20.tar.gz"
+        },
+        {
             "name": "dejagnu-1.6.3",
             "download": "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
             "md5": "68c5208c58236eba447d7d6d1326b821",
@@ -211,6 +217,12 @@
             "path": "/mnt/linux_dist/root/sources/intltool-0.51.0.tar.gz"
         },
         {
+            "name": "jinja2-3.0.1",
+            "download": "https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.1.tar.gz",
+            "md5": "25ba6ef98c164878acff1036fbd72a1d",
+            "path": "/mnt/linux_dist/root/sources/jinja2-3.0.1.tar.gz"
+        },
+        {
             "name": "iproute2-5.13.0",
             "download": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.13.0.tar.xz",
             "md5": "15fc3786303a173a14e180afe4cd2ecd",
@@ -295,6 +307,12 @@
             "path": "/mnt/linux_dist/root/sources/man-pages-5.13.tar.xz"
         },
         {
+            "name": "markupsafe-2.0.1",
+            "download": "https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz",
+            "md5": "892e0fefa3c488387e5cc0cad2daa523",
+            "path": "/mnt/linux_dist/root/sources/markupsafe-2.0.1.tar.gz"
+        },
+        {
             "name": "meson-0.59.1",
             "download": "https://github.com/mesonbuild/meson/releases/download/0.59.1/meson-0.59.1.tar.gz",
             "md5": "9c8135ecde820094be2f42f457fb6535",
@@ -364,7 +382,7 @@
             "name": "python-3.9.6",
             "download": "https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz",
             "md5": "ecc29a7688f86e550d29dba2ee66cf80",
-            "path": "/mnt/linux_dist/root/sources/Python-3.9.6.tar.xz"
+            "path": "/mnt/linux_dist/root/sources/python-3.9.6.tar.xz"
         },
         {
             "name": "python documentation-3.9.6",
@@ -395,6 +413,18 @@
             "download": "https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz",
             "md5": "c70599ab0d037fde724f7210c2c8d7f8",
             "path": "/mnt/linux_dist/root/sources/sysklogd-1.5.1.tar.gz"
+        },
+        {
+            "name": "systemd-249",
+            "download": "https://github.com/systemd/systemd/archive/v249/systemd-249.tar.gz",
+            "md5": "8e8adf909c255914dfc10709bd372e69",
+            "path": "/mnt/linux_dist/root/sources/systemd-249.tar.gz"
+        },
+        {
+            "name": "systemd-man-pages-249",
+            "download": "https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-249.tar.xz",
+            "md5": "d9f2508d6b114b1c02476cd79b8fc786",
+            "path": "/mnt/linux_dist/root/sources/systemd-man-pages-249.tar.xz"
         },
         {
             "name": "sysvinit-2.99",
@@ -454,7 +484,7 @@
             "name": "xml::parser-2.46",
             "download": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
             "md5": "80bb18a8e6240fcf7ec2f7b57601c170",
-            "path": "/mnt/linux_dist/root/sources/XML-Parser-2.46.tar.gz"
+            "path": "/mnt/linux_dist/root/sources/xml-parser-2.46.tar.gz"
         },
         {
             "name": "xz utils-5.2.5",

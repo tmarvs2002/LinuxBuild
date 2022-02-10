@@ -1,5 +1,5 @@
 #!/bin/bash
 
-CC=gcc ./configure --prefix=/usr -G -O3
+perl Makefile.PL
 
 make && make test && make install
