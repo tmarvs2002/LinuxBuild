@@ -16,7 +16,7 @@ mount -vt proc proc $LFS/proc
 mount -vt sysfs sysfs $LFS/sys
 mount -vt tmpfs tmpfs $LFS/run
 
-cp -r "$BUILD"/chroot/* "$LFS"/tmp
+cp -r "$BUILD"/chroot "$LFS"/tmp
 
 chroot "$LFS" /usr/bin/env -i \
     HOME=/root \
@@ -25,4 +25,4 @@ chroot "$LFS" /usr/bin/env -i \
     PATH=/usr/bin:/usr/sbin \
     /bin/bash --login +h
 
-rm -rdf "$LFS"/tmp/*
+rm -rdf "$LFS"/tmp/chroot

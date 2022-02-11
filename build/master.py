@@ -32,7 +32,7 @@ class Installer:
             if os.path.isfile(i['path']): continue
             _input = wget_fmt.format(i['download'], i['path'])
             subprocess.run(_input, shell=True)
-        exit(1)
+        exit("DONE")
     
     def package_configuration(self):
         p = self.params
