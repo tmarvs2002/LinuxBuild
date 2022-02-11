@@ -1,17 +1,19 @@
 #!/bin/bash
 
+set -e
+
 echo "LFS: ${LFS:?}"
 echo "BUILD: ${BUILD:?}"
 
-SS="$LFS"/tmp/system_software
+CHROOT_DIR="$BUILD"/chroot
 
-cp -r "$BUILD"/system_software $SS
+bash -e "$CHROOT_DIR"/mount-virt.sh
 
 chroot "$LFS" /usr/bin/env -i \
     HOME=/root \
     TERM="$TERM" \
     PS1='(lfs chroot) \u:\w\$ ' \
     PATH=/usr/bin:/usr/sbin \
-    /bin/bash --login +h
+    /dist/system_software/install.sh
 
-rm -rdf $SS
+bash -e "$CHROOT_DIR"/unmount-virt.sh

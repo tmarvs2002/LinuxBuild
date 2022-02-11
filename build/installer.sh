@@ -9,11 +9,11 @@ SCRIPT="$BUILD"/master.py
 SOURCE_EXTRACTION="$LFS"/sources/tmp
 
 
-# mkdir -pv $LFS/sources $BUILD && chmod a+wt $LFS/sources
+mkdir -pv $LFS/sources $BUILD && chmod a+wt $LFS/sources
 
-# python3 $SCRIPT package_download
+python3 $SCRIPT package_download
 
-#sudo -E bash -e "$BUILD"/preparation.sh
+sudo -E bash -e "$BUILD"/preparation.sh
 
 function configure_package_run {
     cd $SOURCE_EXTRACTION
@@ -32,12 +32,10 @@ function configure_package_input {
     done
 }
 
-# configure_package_input "cross_toolchain"
-# configure_package_input "temporary_tools"
+sudo chown -R lfs:lfs /mnt/dist_build
+sudo chmod -R 775 /mnt/dist_build
 
-# sudo -E bash -e "$BUILD"/chroot-setup.sh
+configure_package_input "cross_toolchain"
+configure_package_input "temporary_tools"
 
-# umount "$LFS"/dev{/pts,}
-# umount "$LFS"/{sys,proc,run}
-# cd $LFS
-# tar -cJpf "$BUILD"/lfs-temp-tools.tar.xz .
+sudo -E bash -e "$BUILD"/chroot-setup.sh

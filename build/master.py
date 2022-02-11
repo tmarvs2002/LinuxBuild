@@ -4,11 +4,10 @@ import os
 import json
 import subprocess
 
-PACKAGES = '/mnt/linux_dist/build/packages.json'
-CONFIGURATION = '/mnt/linux_dist/build/configuration.json'
-SOURCES = '/mnt/linux_dist/root/sources'
+PACKAGES = '$BUILD/packages.json'
+CONFIGURATION = '$BUILD/configuration.json'
+SOURCES = '$LFS/sources'
 EXTRACTION = f'{SOURCES}/tmp'
-
 
 
 class Installer:

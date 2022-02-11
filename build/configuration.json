@@ -2,181 +2,627 @@
     "cross_toolchain": [
         {
             "name": "binutils-pass-1",
-            "config": "/mnt/linux_dist/build/config_scripts/cross_toolchain/binutils-pass-1.sh",
+            "config": "$BUILD/config_scripts/cross_toolchain/binutils-pass-1.sh",
             "package": "binutils-2.37",
-            "path": "/mnt/linux_dist/root/sources/binutils-2.37.tar.xz"
+            "path": "$LFS/sources/binutils-2.37.tar.xz"
         },
         {
             "name": "gcc-pass-1",
-            "config": "/mnt/linux_dist/build/config_scripts/cross_toolchain/gcc-pass-1.sh",
+            "config": "$BUILD/config_scripts/cross_toolchain/gcc-pass-1.sh",
             "package": "gcc-11.2.0",
-            "path": "/mnt/linux_dist/root/sources/gcc-11.2.0.tar.xz"
+            "path": "$LFS/sources/gcc-11.2.0.tar.xz"
         },
         {
             "name": "linux-apiheaders",
-            "config": "/mnt/linux_dist/build/config_scripts/cross_toolchain/linux-apiheaders.sh",
+            "config": "$BUILD/config_scripts/cross_toolchain/linux-apiheaders.sh",
             "package": "linux-5.13.12",
-            "path": "/mnt/linux_dist/root/sources/linux-5.13.12.tar.xz"
+            "path": "$LFS/sources/linux-5.13.12.tar.xz"
         },
         {
             "name": "glibc",
-            "config": "/mnt/linux_dist/build/config_scripts/cross_toolchain/glibc.sh",
+            "config": "$BUILD/config_scripts/cross_toolchain/glibc.sh",
             "package": "glibc-2.34",
-            "path": "/mnt/linux_dist/root/sources/glibc-2.34.tar.xz"
+            "path": "$LFS/sources/glibc-2.34.tar.xz"
         },
         {
             "name": "libstdc++_pass-1",
-            "config": "/mnt/linux_dist/build/config_scripts/cross_toolchain/libstdc_pass-1.sh",
+            "config": "$BUILD/config_scripts/cross_toolchain/libstdc_pass-1.sh",
             "package": "gcc-11.2.0",
-            "path": "/mnt/linux_dist/root/sources/gcc-11.2.0.tar.xz"
+            "path": "$LFS/sources/gcc-11.2.0.tar.xz"
         }
     ],
     "temporary_tools": [
         {
             "name": "m4",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/m4.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/m4.sh",
             "package": "m4-1.4.19",
-            "path": "/mnt/linux_dist/root/sources/m4-1.4.19.tar.xz"
+            "path": "$LFS/sources/m4-1.4.19.tar.xz"
         },
         {
             "name": "ncurses",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/ncurses.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/ncurses.sh",
             "package": "ncurses-6.2",
-            "path": "/mnt/linux_dist/root/sources/ncurses-6.2.tar.gz"
+            "path": "$LFS/sources/ncurses-6.2.tar.gz"
         },
         {
             "name": "bash",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/bash.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/bash.sh",
             "package": "bash-5.1.8",
-            "path": "/mnt/linux_dist/root/sources/bash-5.1.8.tar.gz"
+            "path": "$LFS/sources/bash-5.1.8.tar.gz"
         },
         {
             "name": "coreutils",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/coreutils.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/coreutils.sh",
             "package": "coreutils-8.32",
-            "path": "/mnt/linux_dist/root/sources/coreutils-8.32.tar.xz"
+            "path": "$LFS/sources/coreutils-8.32.tar.xz"
         },
         {
             "name": "diffutils",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/diffutils.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/diffutils.sh",
             "package": "diffutils-3.8",
-            "path": "/mnt/linux_dist/root/sources/diffutils-3.8.tar.xz"
+            "path": "$LFS/sources/diffutils-3.8.tar.xz"
         },
         {
             "name": "file",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/file.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/file.sh",
             "package": "file-5.40",
-            "path": "/mnt/linux_dist/root/sources/file-5.40.tar.gz"
+            "path": "$LFS/sources/file-5.40.tar.gz"
         },
         {
             "name": "findutils",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/findutils.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/findutils.sh",
             "package": "findutils-4.8.0",
-            "path": "/mnt/linux_dist/root/sources/findutils-4.8.0.tar.xz"
+            "path": "$LFS/sources/findutils-4.8.0.tar.xz"
         },
         {
             "name": "gawk",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/gawk.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/gawk.sh",
             "package": "gawk-5.1.0",
-            "path": "/mnt/linux_dist/root/sources/gawk-5.1.0.tar.xz"
+            "path": "$LFS/sources/gawk-5.1.0.tar.xz"
         },
         {
             "name": "grep",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/grep.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/grep.sh",
             "package": "grep-3.7",
-            "path": "/mnt/linux_dist/root/sources/grep-3.7.tar.xz"
+            "path": "$LFS/sources/grep-3.7.tar.xz"
         },
         {
             "name": "gzip",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/gzip.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/gzip.sh",
             "package": "gzip-1.10",
-            "path": "/mnt/linux_dist/root/sources/gzip-1.10.tar.xz"
+            "path": "$LFS/sources/gzip-1.10.tar.xz"
         },
         {
             "name": "make",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/make.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/make.sh",
             "package": "make-4.3",
-            "path": "/mnt/linux_dist/root/sources/make-4.3.tar.gz"
+            "path": "$LFS/sources/make-4.3.tar.gz"
         },
         {
             "name": "patch",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/patch.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/patch.sh",
             "package": "patch-2.7.6",
-            "path": "/mnt/linux_dist/root/sources/patch-2.7.6.tar.xz"
+            "path": "$LFS/sources/patch-2.7.6.tar.xz"
         },
         {
             "name": "sed",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/sed.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/sed.sh",
             "package": "sed-4.8",
-            "path": "/mnt/linux_dist/root/sources/sed-4.8.tar.xz"
+            "path": "$LFS/sources/sed-4.8.tar.xz"
         },
         {
             "name": "tar",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/tar.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/tar.sh",
             "package": "tar-1.34",
-            "path": "/mnt/linux_dist/root/sources/tar-1.34.tar.xz"
+            "path": "$LFS/sources/tar-1.34.tar.xz"
         },
         {
             "name": "xz",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/xz.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/xz.sh",
             "package": "xz utils-5.2.5",
-            "path": "/mnt/linux_dist/root/sources/xz-5.2.5.tar.xz"
+            "path": "$LFS/sources/xz-5.2.5.tar.xz"
         },
         {
             "name": "binutils-pass-2",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/binutils-pass-2.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/binutils-pass-2.sh",
             "package": "binutils-2.37",
-            "path": "/mnt/linux_dist/root/sources/binutils-2.37.tar.xz"
+            "path": "$LFS/sources/binutils-2.37.tar.xz"
         },
         {
             "name": "gcc-pass-2",
-            "config": "/mnt/linux_dist/build/config_scripts/temporary_tools/gcc-pass-2.sh",
+            "config": "$BUILD/config_scripts/temporary_tools/gcc-pass-2.sh",
             "package": "gcc-11.2.0",
-            "path": "/mnt/linux_dist/root/sources/gcc-11.2.0.tar.xz"
+            "path": "$LFS/sources/gcc-11.2.0.tar.xz"
         }
     ],
     "additional_temporary_tools": [
         {
             "name": "libstdc++_pass-2",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/libstdc_pass-2.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/libstdc_pass-2.sh",
             "package": "gcc-11.2.0",
-            "path": "/mnt/linux_dist/root/sources/gcc-11.2.0.tar.xz"
+            "path": "$LFS/sources/gcc-11.2.0.tar.xz"
         },
         {
             "name": "gettext",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/gettext.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/gettext.sh",
             "package": "gettext-0.21",
-            "path": "/mnt/linux_dist/root/sources/gettext-0.21.tar.xz"
+            "path": "$LFS/sources/gettext-0.21.tar.xz"
         },
         {
             "name": "bison",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/bison.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/bison.sh",
             "package": "bison-3.7.6",
-            "path": "/mnt/linux_dist/root/sources/bison-3.7.6.tar.xz"
+            "path": "$LFS/sources/bison-3.7.6.tar.xz"
         },
         {
             "name": "perl",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/perl.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/perl.sh",
             "package": "perl-5.34.0",
-            "path": "/mnt/linux_dist/root/sources/perl-5.34.0.tar.xz"
+            "path": "$LFS/sources/perl-5.34.0.tar.xz"
         },
         {
             "name": "python",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/python.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/python.sh",
             "package": "python-3.9.6",
-            "path": "/mnt/linux_dist/root/sources/Python-3.9.6.tar.xz"
+            "path": "$LFS/sources/Python-3.9.6.tar.xz"
         },
         {
             "name": "texinfo",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/texinfo.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/texinfo.sh",
             "package": "texinfo-6.8",
-            "path": "/mnt/linux_dist/root/sources/texinfo-6.8.tar.xz"
+            "path": "$LFS/sources/texinfo-6.8.tar.xz"
         },
         {
             "name": "util-linux",
-            "config": "/mnt/linux_dist/build/config_scripts/additional_temporary_tools/util-linux.sh",
+            "config": "$BUILD/config_scripts/additional_temporary_tools/util-linux.sh",
             "package": "util-linux-2.37.2",
-            "path": "/mnt/linux_dist/root/sources/util-linux-2.37.2.tar.xz"
+            "path": "$LFS/sources/util-linux-2.37.2.tar.xz"
+        }
+    ],
+    "basic_system_software": [
+        {
+            "package": "man-pages-5.13",
+            "config": "$BUILD/config_scripts/basic_system_software/man-pages.sh",
+            "path": "$LFS/sources/man-pages-5.13.tar.xz",
+            "name": "man-pages"
+        },
+        {
+            "package": "iana-etc-20210611",
+            "config": "$BUILD/config_scripts/basic_system_software/iana-etc.sh",
+            "path": "$LFS/sources/iana-etc-20210611.tar.gz",
+            "name": "iana-etc"
+        },
+        {
+            "package": "glibc-2.34",
+            "config": "$BUILD/config_scripts/basic_system_software/glibc.sh",
+            "path": "$LFS/sources/glibc-2.34.tar.xz",
+            "name": "glibc"
+        },
+        {
+            "package": "zlib-1.2.11",
+            "config": "$BUILD/config_scripts/basic_system_software/zlib.sh",
+            "path": "$LFS/sources/zlib-1.2.11.tar.xz",
+            "name": "zlib"
+        },
+        {
+            "package": "bzip2-1.0.8",
+            "config": "$BUILD/config_scripts/basic_system_software/bzip2.sh",
+            "path": "$LFS/sources/bzip2-1.0.8.tar.gz",
+            "name": "bzip2"
+        },
+        {
+            "package": "xz-5.2.5",
+            "config": "$BUILD/config_scripts/basic_system_software/xz.sh",
+            "path": "$LFS/sources/xz-5.2.5.tar.xz",
+            "name": "xz"
+        },
+        {
+            "package": "zstd-1.5.0",
+            "config": "$BUILD/config_scripts/basic_system_software/zstd.sh",
+            "path": "$LFS/sources/zstd-1.5.0.tar.gz",
+            "name": "zstd"
+        },
+        {
+            "package": "file-5.40",
+            "config": "$BUILD/config_scripts/basic_system_software/file.sh",
+            "path": "$LFS/sources/file-5.40.tar.gz",
+            "name": "file"
+        },
+        {
+            "package": "readline-8.1",
+            "config": "$BUILD/config_scripts/basic_system_software/readline.sh",
+            "path": "$LFS/sources/readline-8.1.tar.gz",
+            "name": "readline"
+        },
+        {
+            "package": "m4-1.4.19",
+            "config": "$BUILD/config_scripts/basic_system_software/m4.sh",
+            "path": "$LFS/sources/m4-1.4.19.tar.xz",
+            "name": "m4"
+        },
+        {
+            "package": "bc-5.0.0",
+            "config": "$BUILD/config_scripts/basic_system_software/bc.sh",
+            "path": "$LFS/sources/bc-5.0.0.tar.xz",
+            "name": "bc"
+        },
+        {
+            "package": "flex-2.6.4",
+            "config": "$BUILD/config_scripts/basic_system_software/flex.sh",
+            "path": "$LFS/sources/flex-2.6.4.tar.gz",
+            "name": "flex"
+        },
+        {
+            "package": "tcl-8.6.11",
+            "config": "$BUILD/config_scripts/basic_system_software/tcl.sh",
+            "path": "$LFS/sources/tcl8.6.11-src.tar.gz",
+            "name": "tcl"
+        },
+        {
+            "package": "expect-5.45.4",
+            "config": "$BUILD/config_scripts/basic_system_software/expect.sh",
+            "path": "$LFS/sources/expect5.45.4.tar.gz",
+            "name": "expect"
+        },
+        {
+            "package": "dejagnu-1.6.3",
+            "config": "$BUILD/config_scripts/basic_system_software/dejagnu.sh",
+            "path": "$LFS/sources/dejagnu-1.6.3.tar.gz",
+            "name": "dejagnu"
+        },
+        {
+            "package": "binutils-2.37",
+            "config": "$BUILD/config_scripts/basic_system_software/binutils.sh",
+            "path": "$LFS/sources/binutils-2.37.tar.xz",
+            "name": "binutils"
+        },
+        {
+            "package": "gmp-6.2.1",
+            "config": "$BUILD/config_scripts/basic_system_software/gmp.sh",
+            "path": "$LFS/sources/gmp-6.2.1.tar.xz",
+            "name": "gmp"
+        },
+        {
+            "package": "mpfr-4.1.0",
+            "config": "$BUILD/config_scripts/basic_system_software/mpfr.sh",
+            "path": "$LFS/sources/mpfr-4.1.0.tar.xz",
+            "name": "mpfr"
+        },
+        {
+            "package": "mpc-1.2.1",
+            "config": "$BUILD/config_scripts/basic_system_software/mpc.sh",
+            "path": "$LFS/sources/mpc-1.2.1.tar.gz",
+            "name": "mpc"
+        },
+        {
+            "package": "attr-2.5.1",
+            "config": "$BUILD/config_scripts/basic_system_software/attr.sh",
+            "path": "$LFS/sources/attr-2.5.1.tar.gz",
+            "name": "attr"
+        },
+        {
+            "package": "acl-2.3.1",
+            "config": "$BUILD/config_scripts/basic_system_software/acl.sh",
+            "path": "$LFS/sources/acl-2.3.1.tar.xz",
+            "name": "acl"
+        },
+        {
+            "package": "libcap-2.53",
+            "config": "$BUILD/config_scripts/basic_system_software/libcap.sh",
+            "path": "$LFS/sources/libcap-2.53.tar.xz",
+            "name": "libcap"
+        },
+        {
+            "package": "shadow-4.9",
+            "config": "$BUILD/config_scripts/basic_system_software/shadow.sh",
+            "path": "$LFS/sources/shadow-4.9.tar.xz",
+            "name": "shadow"
+        },
+        {
+            "package": "gcc-11.2.0",
+            "config": "$BUILD/config_scripts/basic_system_software/gcc.sh",
+            "path": "$LFS/sources/gcc-11.2.0.tar.xz",
+            "name": "gcc"
+        },
+        {
+            "package": "pkg-config-0.29.2",
+            "config": "$BUILD/config_scripts/basic_system_software/pkg-config.sh",
+            "path": "$LFS/sources/pkg-config-0.29.2.tar.gz",
+            "name": "pkg-config"
+        },
+        {
+            "package": "ncurses-6.2",
+            "config": "$BUILD/config_scripts/basic_system_software/ncurses.sh",
+            "path": "$LFS/sources/ncurses-6.2.tar.gz",
+            "name": "ncurses"
+        },
+        {
+            "package": "sed-4.8",
+            "config": "$BUILD/config_scripts/basic_system_software/sed.sh",
+            "path": "$LFS/sources/sed-4.8.tar.xz",
+            "name": "sed"
+        },
+        {
+            "package": "psmisc-23.4",
+            "config": "$BUILD/config_scripts/basic_system_software/psmisc.sh",
+            "path": "$LFS/sources/psmisc-23.4.tar.xz",
+            "name": "psmisc"
+        },
+        {
+            "package": "gettext-0.21",
+            "config": "$BUILD/config_scripts/basic_system_software/gettext.sh",
+            "path": "$LFS/sources/gettext-0.21.tar.xz",
+            "name": "gettext"
+        },
+        {
+            "package": "bison-3.7.6",
+            "config": "$BUILD/config_scripts/basic_system_software/bison.sh",
+            "path": "$LFS/sources/bison-3.7.6.tar.xz",
+            "name": "bison"
+        },
+        {
+            "package": "grep-3.7",
+            "config": "$BUILD/config_scripts/basic_system_software/grep.sh",
+            "path": "$LFS/sources/grep-3.7.tar.xz",
+            "name": "grep"
+        },
+        {
+            "package": "bash-5.1.8",
+            "config": "$BUILD/config_scripts/basic_system_software/bash.sh",
+            "path": "$LFS/sources/bash-5.1.8.tar.gz",
+            "name": "bash"
+        },
+        {
+            "package": "libtool-2.4.6",
+            "config": "$BUILD/config_scripts/basic_system_software/libtool.sh",
+            "path": "$LFS/sources/libtool-2.4.6.tar.xz",
+            "name": "libtool"
+        },
+        {
+            "package": "gdbm-1.20",
+            "config": "$BUILD/config_scripts/basic_system_software/gdbm.sh",
+            "path": "$LFS/sources/gdbm-1.20.tar.gz",
+            "name": "gdbm"
+        },
+        {
+            "package": "gperf-3.1",
+            "config": "$BUILD/config_scripts/basic_system_software/gperf.sh",
+            "path": "$LFS/sources/gperf-3.1.tar.gz",
+            "name": "gperf"
+        },
+        {
+            "package": "expat-2.4.1",
+            "config": "$BUILD/config_scripts/basic_system_software/expat.sh",
+            "path": "$LFS/sources/expat-2.4.1.tar.xz",
+            "name": "expat"
+        },
+        {
+            "package": "inetutils-2.1",
+            "config": "$BUILD/config_scripts/basic_system_software/inetutils.sh",
+            "path": "$LFS/sources/inetutils-2.1.tar.xz",
+            "name": "inetutils"
+        },
+        {
+            "package": "less-590",
+            "config": "$BUILD/config_scripts/basic_system_software/less.sh",
+            "path": "$LFS/sources/less-590.tar.gz",
+            "name": "less"
+        },
+        {
+            "package": "perl-5.34.0",
+            "config": "$BUILD/config_scripts/basic_system_software/perl.sh",
+            "path": "$LFS/sources/perl-5.34.0.tar.xz",
+            "name": "perl"
+        },
+        {
+            "package": "xml::parser-2.46",
+            "config": "$BUILD/config_scripts/basic_system_software/xml-parser.sh",
+            "path": "$LFS/sources/xml-parser-2.46.tar.gz",
+            "name": "xml-parser"
+        },
+        {
+            "package": "intltool-0.51.0",
+            "config": "$BUILD/config_scripts/basic_system_software/intltool.sh",
+            "path": "$LFS/sources/intltool-0.51.0.tar.gz",
+            "name": "intltool"
+        },
+        {
+            "package": "autoconf-2.71",
+            "config": "$BUILD/config_scripts/basic_system_software/autoconf.sh",
+            "path": "$LFS/sources/autoconf-2.71.tar.xz",
+            "name": "autoconf"
+        },
+        {
+            "package": "automake-1.16.4",
+            "config": "$BUILD/config_scripts/basic_system_software/automake.sh",
+            "path": "$LFS/sources/automake-1.16.4.tar.xz",
+            "name": "automake"
+        },
+        {
+            "package": "kmod-29",
+            "config": "$BUILD/config_scripts/basic_system_software/kmod.sh",
+            "path": "$LFS/sources/kmod-29.tar.xz",
+            "name": "kmod"
+        },
+        {
+            "package": "elfutils-0.185",
+            "config": "$BUILD/config_scripts/basic_system_software/elfutils.sh",
+            "path": "$LFS/sources/elfutils-0.185.tar.bz2",
+            "name": "elfutils"
+        },
+        {
+            "package": "libffi-3.4.2",
+            "config": "$BUILD/config_scripts/basic_system_software/libffi.sh",
+            "path": "$LFS/sources/libffi-3.4.2.tar.gz",
+            "name": "libffi"
+        },
+        {
+            "package": "openssl-1.1.1l",
+            "config": "$BUILD/config_scripts/basic_system_software/openssl.sh",
+            "path": "$LFS/sources/openssl-1.1.1l.tar.gz",
+            "name": "openssl"
+        },
+        {
+            "package": "python-3.9.6",
+            "config": "$BUILD/config_scripts/basic_system_software/python.sh",
+            "path": "$LFS/sources/python-3.9.6.tar.xz",
+            "name": "python"
+        },
+        {
+            "package": "ninja-1.10.2",
+            "config": "$BUILD/config_scripts/basic_system_software/ninja.sh",
+            "path": "$LFS/sources/ninja-1.10.2.tar.gz",
+            "name": "ninja"
+        },
+        {
+            "package": "meson-0.59.1",
+            "config": "$BUILD/config_scripts/basic_system_software/meson.sh",
+            "path": "$LFS/sources/meson-0.59.1.tar.gz",
+            "name": "meson"
+        },
+        {
+            "package": "coreutils-8.32",
+            "config": "$BUILD/config_scripts/basic_system_software/coreutils.sh",
+            "path": "$LFS/sources/coreutils-8.32.tar.xz",
+            "name": "coreutils"
+        },
+        {
+            "package": "check-0.15.2",
+            "config": "$BUILD/config_scripts/basic_system_software/check.sh",
+            "path": "$LFS/sources/check-0.15.2.tar.gz",
+            "name": "check"
+        },
+        {
+            "package": "diffutils-3.8",
+            "config": "$BUILD/config_scripts/basic_system_software/diffutils.sh",
+            "path": "$LFS/sources/diffutils-3.8.tar.xz",
+            "name": "diffutils"
+        },
+        {
+            "package": "gawk-5.1.0",
+            "config": "$BUILD/config_scripts/basic_system_software/gawk.sh",
+            "path": "$LFS/sources/gawk-5.1.0.tar.xz",
+            "name": "gawk"
+        },
+        {
+            "package": "findutils-4.8.0",
+            "config": "$BUILD/config_scripts/basic_system_software/findutils.sh",
+            "path": "$LFS/sources/findutils-4.8.0.tar.xz",
+            "name": "findutils"
+        },
+        {
+            "package": "groff-1.22.4",
+            "config": "$BUILD/config_scripts/basic_system_software/groff.sh",
+            "path": "$LFS/sources/groff-1.22.4.tar.gz",
+            "name": "groff"
+        },
+        {
+            "package": "grub-2.06",
+            "config": "$BUILD/config_scripts/basic_system_software/grub.sh",
+            "path": "$LFS/sources/grub-2.06.tar.xz",
+            "name": "grub"
+        },
+        {
+            "package": "gzip-1.10",
+            "config": "$BUILD/config_scripts/basic_system_software/gzip.sh",
+            "path": "$LFS/sources/gzip-1.10.tar.xz",
+            "name": "gzip"
+        },
+        {
+            "package": "iproute2-5.13.0",
+            "config": "$BUILD/config_scripts/basic_system_software/iproute2.sh",
+            "path": "$LFS/sources/iproute2-5.13.0.tar.xz",
+            "name": "iproute2"
+        },
+        {
+            "package": "kbd-2.4.0",
+            "config": "$BUILD/config_scripts/basic_system_software/kbd.sh",
+            "path": "$LFS/sources/kbd-2.4.0.tar.xz",
+            "name": "kbd"
+        },
+        {
+            "package": "libpipeline-1.5.3",
+            "config": "$BUILD/config_scripts/basic_system_software/libpipeline.sh",
+            "path": "$LFS/sources/libpipeline-1.5.3.tar.gz",
+            "name": "libpipeline"
+        },
+        {
+            "package": "make-4.3",
+            "config": "$BUILD/config_scripts/basic_system_software/make.sh",
+            "path": "$LFS/sources/make-4.3.tar.gz",
+            "name": "make"
+        },
+        {
+            "package": "patch-2.7.6",
+            "config": "$BUILD/config_scripts/basic_system_software/patch.sh",
+            "path": "$LFS/sources/patch-2.7.6.tar.xz",
+            "name": "patch"
+        },
+        {
+            "package": "tar-1.34",
+            "config": "$BUILD/config_scripts/basic_system_software/tar.sh",
+            "path": "$LFS/sources/tar-1.34.tar.xz",
+            "name": "tar"
+        },
+        {
+            "package": "texinfo-6.8",
+            "config": "$BUILD/config_scripts/basic_system_software/texinfo.sh",
+            "path": "$LFS/sources/texinfo-6.8.tar.xz",
+            "name": "texinfo"
+        },
+        {
+            "package": "vim-8.2.3337",
+            "config": "$BUILD/config_scripts/basic_system_software/vim.sh",
+            "path": "$LFS/sources/vim-8.2.3337.tar.gz",
+            "name": "vim"
+        },
+        {
+            "package": "markupsafe-2.0.1",
+            "config": "$BUILD/config_scripts/basic_system_software/markupsafe.sh",
+            "path": "$LFS/sources/markupsafe-2.0.1.tar.gz",
+            "name": "markupsafe"
+        },
+        {
+            "package": "jinja2-3.0.1",
+            "config": "$BUILD/config_scripts/basic_system_software/jinja2.sh",
+            "path": "$LFS/sources/jinja2-3.0.1.tar.gz",
+            "name": "jinja2"
+        },
+        {
+            "package": "systemd-249",
+            "config": "$BUILD/config_scripts/basic_system_software/systemd.sh",
+            "path": "$LFS/sources/systemd-249.tar.gz",
+            "name": "systemd"
+        },
+        {
+            "package": "d-bus-1.12.20",
+            "config": "$BUILD/config_scripts/basic_system_software/dbus.sh",
+            "path": "$LFS/sources/dbus-1.12.20.tar.gz",
+            "name": "dbus"
+        },
+        {
+            "package": "man-db-2.9.4",
+            "config": "$BUILD/config_scripts/basic_system_software/man-db.sh",
+            "path": "$LFS/sources/man-db-2.9.4.tar.xz",
+            "name": "man-db"
+        },
+        {
+            "package": "procps-ng-3.3.17",
+            "config": "$BUILD/config_scripts/basic_system_software/procps-ng.sh",
+            "path": "$LFS/sources/procps-ng-3.3.17.tar.xz",
+            "name": "procps-ng"
+        },
+        {
+            "package": "util-linux-2.37.2",
+            "config": "$BUILD/config_scripts/basic_system_software/util-linux.sh",
+            "path": "$LFS/sources/util-linux-2.37.2.tar.xz",
+            "name": "util-linux"
+        },
+        {
+            "package": "e2fsprogs-1.46.4",
+            "config": "$BUILD/config_scripts/basic_system_software/e2fsprogs.sh",
+            "path": "$LFS/sources/e2fsprogs-1.46.4.tar.gz",
+            "name": "e2fsprogs"
         }
     ]
 }
