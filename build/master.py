@@ -4,9 +4,12 @@ import os
 import json
 import subprocess
 
-PACKAGES = '$BUILD/packages.json'
-CONFIGURATION = '$BUILD/configuration.json'
-SOURCES = '$LFS/sources'
+BUILD = subprocess.getoutput("echo $BUILD")
+LFS = subprocess.getoutput("echo $LFS")
+
+PACKAGES = f'{BUILD}/packages.json'
+CONFIGURATION = f'{BUILD}/configuration.json'
+SOURCES = f'{LFS}/sources'
 EXTRACTION = f'{SOURCES}/tmp'
 
 
@@ -31,7 +34,6 @@ class Installer:
             if os.path.isfile(i['path']): continue
             _input = wget_fmt.format(i['download'], i['path'])
             subprocess.run(_input, shell=True)
-        exit("DONE")
     
     def package_configuration(self):
         p = self.params
@@ -39,12 +41,12 @@ class Installer:
         json_data = self._json_data(CONFIGURATION)
         try:
             target = json_data[stage][pkg]
-            self._executeCommands([f'sudo rm -rdf {EXTRACTION}'])
+            self._executeCommands([f'rm -rdf {EXTRACTION}'])
         except IndexError:
             exit(-1)
         self._executeCommands([
             f'mkdir {EXTRACTION}',
-            f'tar -xf {target["path"]} -C {EXTRACTION} --strip-components=1'
+            f'tar -xf {LFS}{target["path"]} -C {EXTRACTION} --strip-components=1'
         ])
         print(target['config'])
         

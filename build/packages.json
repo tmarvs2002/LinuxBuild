@@ -503,6 +503,12 @@
             "download": "https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz",
             "md5": "a6eb7fb1f2c21fa80030a47993853e92",
             "path": "/mnt/linux_dist/root/sources/zstd-1.5.0.tar.gz"
+        },
+        {
+            "name": "libidn2-2.3.2",
+            "download": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.2.tar.gz",
+            "md5": "fb54962eb68cf22d47a4ae61f0aba993",
+            "path": "/mnt/linux_dist/root/sources/libidn2-2.3.2.tar.gz"
         }
     ],
     "patches": [

@@ -2,15 +2,20 @@
 
 set -e
 
-export LFS=/
-export BUILD=/dist/
+export LFS=""
+export BUILD=/dist
 
 SCRIPT=/dist/master.py
 SOURCE_EXTRACTION=/sources/tmp
 
 function configure_package_run {
     cd $SOURCE_EXTRACTION
+    echo && echo "Configuring $1" && echo
+    sleep 2
     bash -e "$1"
+    echo && echo "Done Configuring $1" && echo
+    sleep 2
+    cd /dist
     rm -rdf $SOURCE_EXTRACTION
 }
 
@@ -19,7 +24,8 @@ function configure_package_input {
     while :
     do
         value=`python3 $SCRIPT package_configuration $1 $pkg`
-        configure_package_run $value
+        file="$BUILD""$value"
+        configure_package_run $file
         pkg=$((pkg+1))
     done
 }

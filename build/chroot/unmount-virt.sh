@@ -5,9 +5,15 @@ set -e
 echo "LFS: ${LFS:?}"
 echo "BUILD: ${BUILD:?}"
 
-umount "$LFS"/dist
-umount "$LFS"/run
-umount "$LFS"/sys
-umount "$LFS"/proc
-umount/pts "$LFS"/dev/pts
-umount "$LFS"/dev
+function unmount {
+    if mountpoint -q $LFS/"$1"; then
+    umount -lf $LFS/"$1"
+    fi
+}
+
+unmount dist
+unmount run
+unmount sys
+unmount proc
+unmount dev/pts
+unmount dev

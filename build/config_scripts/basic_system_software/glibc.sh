@@ -5,9 +5,10 @@ sed -e '/NOTIFY_REMOVED)/s/)/ \&\& data.attr != NULL)/' \
 
 patch -Np1 -i ../glibc-2.34-fhs-1.patch
 
-mkdir build && cd build
+mkdir -v build && cd build
 
 echo "rootsbindir=/usr/sbin" > configparms
+
 
 ../configure --prefix=/usr                            \
              --disable-werror                         \
@@ -19,17 +20,13 @@ echo "rootsbindir=/usr/sbin" > configparms
 make && make check
 
 touch /etc/ld.so.conf
-
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
-
 make install
+
 sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd
 
 cp -v ../nscd/nscd.conf /etc/nscd.conf
 mkdir -pv /var/cache/nscd
-
-install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
-install -v -Dm644 ../nscd/nscd.service /usr/lib/systemd/system/nscd.service
 
 mkdir -pv /usr/lib/locale
 localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
@@ -73,7 +70,7 @@ make localedata/install-locales
 localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
 localedef -i ja_JP -f SHIFT_JIS ja_JP.SIJS 2> /dev/null || true
 
-echo "
+cat > /etc/nsswitch.conf << "EOF"
 # Begin /etc/nsswitch.conf
 
 passwd: files
@@ -89,7 +86,7 @@ ethers: files
 rpc: files
 
 # End /etc/nsswitch.conf
-" >> /etc/nsswitch.conf
+EOF
 
 tar -xf ../../tzdata2021a.tar.gz
 
@@ -109,15 +106,18 @@ unset ZONEINFO
 
 tzselect
 
-ln -sfv /usr/share/zoneinfo/<xxx> /etc/localtime
+ln -sfv /usr/share/zoneinfo/Europe/London /etc/localtime
 
-echo "
+cat > /etc/ld.so.conf << "EOF"
 # Begin /etc/ld.so.conf
 /usr/local/lib
 /opt/lib
 
+EOF
+
+cat >> /etc/ld.so.conf << "EOF"
 # Add an include directory
 include /etc/ld.so.conf.d/*.conf
-" >> /etc/ld.so.conf
 
+EOF
 mkdir -pv /etc/ld.so.conf.d
