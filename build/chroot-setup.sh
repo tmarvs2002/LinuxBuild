@@ -56,11 +56,11 @@ nogroup:x:99:
 users:x:999:
 EOF
 
-chroot "$LFS" /usr/bin/env -i   \
-    HOME=/root                  \
-    TERM="$TERM"                \
+chroot $LFS /usr/bin/env -i \
+    HOME=/root \
+    TERM="$TERM" \
     PS1='(lfs chroot) \u:\w\$ ' \
-    PATH=/usr/bin:/usr/sbin     \
+    PATH=/usr/bin:/usr/sbin \
     /dist/chroot/setup-env.sh
 
 bash -e "$CHROOT_DIR"/unmount-virt.sh

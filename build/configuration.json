@@ -195,7 +195,7 @@
         {
             "package": "libidn2-2.3.2",
             "config": "/config_scripts/basic_system_software/libidn2.sh",
-            "path": "/sources/libidn2-2.3.2.tar.xz",
+            "path": "/sources/libidn2-2.3.2.tar.gz",
             "name": "libidn2"
         },
         {

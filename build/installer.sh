@@ -1,21 +1,12 @@
 #!/bin/bash
 
-set -e
-
-echo "LFS: ${LFS:?}"
-echo "BUILD: ${BUILD:?}"
-
 SCRIPT="$BUILD"/master.py
 SOURCE_EXTRACTION="$LFS"/sources/tmp
+USER=$(whoami)
 
-# if ! [ -d "$LFS/sources/tools" ]; then
-# mkdir -pv "$LFS"/sources $BUILD && chmod a+wt "$LFS"/sources
-# python3 $SCRIPT package_download
-# bash -e "$BUILD"/preparation.sh
-# fi
-
-
-python3 $SCRIPT package_download
+set -e
+echo "LFS: ${LFS:?}"
+echo "BUILD: ${BUILD:?}"
 
 function configure_package_run {
     cd $SOURCE_EXTRACTION
@@ -35,15 +26,24 @@ function configure_package_input {
     done
 }
 
+if [ $USER != "lfs" ] && [ $USER != "root" ]; then
+mkdir -pv $LFS/sources $BUILD && chmod a+wt $LFS/sources
+python3 $SCRIPT package_download
+sudo -E bash -e "$BUILD"/preparation.sh
+exit  
+fi
 
-chown -v lfs $LFS/sources
-chmod -v a+wt $LFS/sources
+if [ $USER == "lfs" ]; then
+python3 $SCRIPT package_download
+configure_package_input "cross_toolchain"
+configure_package_input "temporary_tools"
+fi
 
-# configure_package_input "cross_toolchain"
-# configure_package_input "temporary_tools"
+if [ $USER == "root" ]; then
+bash -e $BUILD/chroot-setup.sh
+fi
 
-# sudo -E bash -e "$BUILD"/chroot-setup.sh
 # sudo -E bash -e "$BUILD"/system-software.sh "additional_temporary_tools"
-sudo -E bash -e "$BUILD"/system-software.sh "basic_system_software"
-sudo -E bash -e "$BUILD"/system-software.sh "strip"
-sudo -E bash -e "$BUILD"/system-software.sh "cleanup"
+# sudo -E bash -e "$BUILD"/system-software.sh "basic_system_software"
+# sudo -E bash -e "$BUILD"/system-software.sh "strip"
+# sudo -E bash -e "$BUILD"/system-software.sh "cleanup"

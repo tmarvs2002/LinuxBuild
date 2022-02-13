@@ -1,14 +1,13 @@
 #!/bin/bash
 
-mkdir -p $LFS/{etc,var} $LFS/usr/{bin,lib,sbin}
+mkdir -pv $LFS/{etc,var} $LFS/usr/{bin,lib,sbin}
 
-for i in bin lib sbin; do
-    ln -sf usr/"$i" "$LFS"/"$i"
-done
+# for i in bin lib sbin; do
+#     ln -sf usr/"$i" "$LFS"/"$i"
+# done
 
-mkdir -p $LFS/lib64
-
-mkdir -p $LFS/tools
+mkdir -pv $LFS/lib64
+mkdir -pv $LFS/tools
 
 if ! [ $(getent group lfs) ]; then
     groupadd lfs
@@ -41,11 +40,9 @@ export MAKEFLAGS='-j4'
 EOF
 
 [ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE
+
 source $HOME_DIR/.bash_profile
+
+chown -R lfs:root $LFS
 fi
-
-sudo chown lfs $LFS/{usr{,/*},lib,var,etc,bin,sbin,tools}
-sudo chown lfs $LFS/lib64
-sudo chown -R lfs:lfs $LFS/sources
-
 
