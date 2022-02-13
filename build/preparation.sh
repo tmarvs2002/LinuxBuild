@@ -1,22 +1,31 @@
 #!/bin/bash
 
 mkdir -pv $LFS/{etc,var} $LFS/usr/{bin,lib,sbin}
-
-# for i in bin lib sbin; do
-#     ln -sf usr/"$i" "$LFS"/"$i"
-# done
-
-mkdir -pv $LFS/lib64
+for i in bin lib sbin; do
+ln -sv usr/$i $LFS/$i
+done
 mkdir -pv $LFS/tools
 
+case $(uname -m) in
+x86_64) mkdir -pv $LFS/lib64 ;;
+esac
+
+
 if ! [ $(getent group lfs) ]; then
-    groupadd lfs
+groupadd lfs
 fi
 
 
 if ! [ $(getent passwd lfs) ]; then
 useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 passwd lfs
+
+chown -v lfs $LFS/{usr{,/*},lib,var,etc,bin,sbin,tools}
+case $(uname -m) in
+x86_64) chown -v lfs $LFS/lib64 ;;
+esac
+
+chown -v lfs $LFS/sources
 
 HOME_DIR=/home/lfs
 
@@ -41,8 +50,7 @@ EOF
 
 [ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE
 
+chown -R lfs $LFS
 source $HOME_DIR/.bash_profile
-
-chown -R lfs:root $LFS
 fi
 

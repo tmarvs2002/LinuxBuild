@@ -5,9 +5,9 @@ set -e
 echo "LFS: ${LFS:?}"
 echo "BUILD: ${BUILD:?}"
 
-CHROOT_DIR="$BUILD"/chroot
+CHROOT="$BUILD"/chroot/build_scripts
 
-sudo -E bash -e "$CHROOT_DIR"/mount-virt.sh
+bash -e $CHROOT/mount-virt.sh
 
 sudo -E chroot "$LFS" /usr/bin/env -i   \
     HOME=/root                  \
@@ -16,4 +16,4 @@ sudo -E chroot "$LFS" /usr/bin/env -i   \
     PATH=/usr/bin:/usr/sbin     \
     /bin/bash --login +h
 
-sudo -E bash -e "$CHROOT_DIR"/unmount-virt.sh
+bash -e $CHROOT/unmount-virt.sh

@@ -11,10 +11,8 @@ SOURCE_EXTRACTION=/sources/tmp
 function configure_package_run {
     cd $SOURCE_EXTRACTION
     echo && echo "Configuring $1" && echo
-    sleep 2
     bash -e "$1"
     echo && echo "Done Configuring $1" && echo
-    sleep 2
     cd /dist
     rm -rdf $SOURCE_EXTRACTION
 }

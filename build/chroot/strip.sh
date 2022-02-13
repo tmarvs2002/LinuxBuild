@@ -56,5 +56,3 @@ done
 unset BIN LIB save_usrlib online_usrbin online_usrlib
 
 rm -rf /tmp/*
-logout
-
